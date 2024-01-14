@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: StudentManagementService
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Student
+    username: ${POSTGRES_USERNAME}
+    password: ${POSTGRES_PASSWORD}
+server:
+  servlet:
+    context-path: /student_service
+  port: 8081
